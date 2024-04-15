@@ -11,32 +11,6 @@ const drawButton = document.getElementById('draw-btn');
 const restartButton = document.getElementById('restart-btn');
 const shareButton = document.getElementById('share-btn');
 
-function drawCard() {
-    // 隨機生成 1 到 48 的數字表示抽到的卡牌
-    const cardNumber = Math.floor(Math.random() * 48) + 1;
-
-    // 假設 isStrength 是判斷卡牌是否是自己的強項的變數
-    const isStrength = true; // 假設是強項
-
-    let message;
-    if (cardNumber <= 24) { // 認可牌
-        if (isStrength) {
-            message = "在自己心中默唸３次，給予自己認可，增加信心。";
-        } else {
-            message = "根據此張認可牌卡號找到相對應的成長牌，作為你今天的功課。";
-        }
-    } else { // 成長牌
-        if (isStrength) {
-            message = "找到相對應的認可牌，在心中默唸３次，給予自己認可，增加信心。";
-        } else {
-            message = "這是你今天的功課，試試看吧！";
-        }
-    }
-
-    // 將消息顯示在網頁上，例如將消息設置為某個元素的文字內容
-    document.getElementById('message').innerText = message;
-}
-
 function shuffleCards() {
     for (let i = cards.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
