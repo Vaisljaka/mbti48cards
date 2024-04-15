@@ -1,20 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MBTI 強項教練卡</title>
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<h1>MBTI 強項教練卡</h1>
-<div class="card-container">
-    <div id="card" class="card">點擊抽一張牌</div>
-</div>
-<button id="shuffle-btn">洗牌</button>
-<button id="draw-btn">抽牌</button>
-<button id="restart-btn">再來一次</button>
-<button id="share-btn">分享</button>
-<script src="script.js"></script>
-</body>
-</html>
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+.card-container {
+    margin-top: 20px;
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    background-color: lightblue;
+    border-radius: 10px;
+    line-height: 300px;
+    cursor: pointer;
+}
+
+.card {
+    width: 200px; /* 設定卡片的寬度 */
+    height: 300px; /* 設定卡片的高度 */
+    background-image: url('https://github.com/Vaisljaka/mbti48cards/blob/main/%E8%AA%8D%E5%8F%AF%E7%89%8C-01.jpg'); /* 設定卡片的背景圖片 */
+    background-size: cover; /* 調整背景圖片大小以填滿整個卡片 */
+    background-position: center; /* 將背景圖片置中 */
+
+.card:hover {
+    background-color: lightcoral;
+    color: white;
+}
