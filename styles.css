@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+.card-container {
+    margin-top: 20px;
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    background-color: lightblue;
+    border-radius: 10px;
+    line-height: 300px;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: lightcoral;
+    color: white;
+}
